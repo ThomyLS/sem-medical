@@ -1,0 +1,87 @@
+@use '../utilities/variables' as*;
+
+/********  SECCION 3  ********/
+
+.seccionTres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color-primario;
+    margin: 100px;
+    padding: 100px;
+    border-radius: $border-radius-sm;;
+    gap: $gap_uno;
+    height: auto;
+}
+
+.seccionTres div h2,
+p {
+    text-decoration: none;
+    color: $text-detalles;
+}
+
+.seccionTres form {
+    background-color: $text-detalles;
+    padding: 75px;
+    border-radius: 8px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap_siete;
+}
+
+.iconFila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: $gap_dos;
+}
+
+.iconFila h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    color: $text-detalles;
+}
+
+.formularioUno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap_siete;
+    height: auto;
+}
+
+.formularioUno label,
+input,
+textarea {
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid $color-primario;
+}
+
+.filaForm {
+    display: flex;
+    flex-direction: row;
+    gap: $gap_siete;
+}
+
+.columnaForm {
+    display: flex;
+    flex-direction: column;
+    gap: $gap_siete;
+}
+
+.columnaForm button,
+.buttonItem {
+    background-color: $text-detalles;
+    border: 1px solid $color-primario;
+    width: 50%;
+}

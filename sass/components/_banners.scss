@@ -1,0 +1,35 @@
+@use '../utilities/variables' as*;
+
+
+.img-banner {
+    border-bottom: 5px solid $text-detalles;
+    box-shadow: $box-shadow-uno;
+    width: 100%;
+}
+
+.conjunto h2 {
+    text-decoration: none;
+    position: relative;
+    text-align: start;
+    bottom: 300px;
+    right: 150px;
+    color: $text-detalles;
+    font-size: 45px;
+}
+
+.conjunto p {
+    position: relative;
+    text-align: start;
+    bottom: 300px;
+    right: 150px;
+    color: $text-detalles;
+    font-size: 18px;
+}
+
+.titulo-banner {
+    top: 450px;
+    left: 600px;
+    color: $text-detalles;
+    font-size: 100px;
+    text-decoration: none;
+}

@@ -1,0 +1,257 @@
+@use '../utilities/variables' as*;
+
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    /********  MEDIA QUERY - MAIN  ********/
+
+    main {
+        margin: 0px;
+    }
+
+    /********  MEDIA QUERY - HEADER  ********/
+
+    .logo {
+        width: 35%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /********  INDEX - BANNER  ********/
+
+    .carousel-caption, .titulo-banner {
+        display: none;
+    }
+
+    /********  INDEX - SECCION 2  ********/
+
+    .seccionDos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: $gap_siete;
+    }
+
+    h2 {
+        color: $color-primario;
+    }
+
+    .seccionDos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccionDos div p {
+        text-align: center;
+    }
+
+    .seccionDos img {
+        width: 35rem;
+    }
+
+    /********  INDEX - CATALOGO  ********/
+
+    .catalogo h3 {
+        text-align: center;
+    }
+
+    .fila {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap_ocho;
+        justify-content: center;
+    }
+
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        gap: $gap_siete;
+        width: 25%;
+    }
+
+    .card-item img {
+        width: 100%;
+    }
+
+    .card-titulo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /********  INDEX - SECCION 3  ********/
+
+    .seccionTres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 25px;
+        padding: 25px;
+        border-radius: 2%;
+        text-align: center;
+    }
+
+    .seccionTres form {
+    padding: 45px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $gap_siete;
+    }
+
+    .row h5 {
+        width: 75%;
+    }
+
+    .iconFila {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0px;
+        gap: $gap_dos;
+    }
+
+    .filaForm {
+        display: flex;
+        flex-direction: column;
+        gap: $gap_siete;
+    }
+
+    /********  MEDIA QUERY - CATALOGO  ********/
+
+    .filaDos {
+        display: flex;
+        flex-direction: row;
+        gap: $gap_once;
+    }
+
+    .dos {
+        width: 65%;
+
+        h4 {
+            font-size: 15px;
+        }
+
+        div {
+            button {
+                width: 75%;
+                padding: 1px;
+            }
+        }
+    }
+
+    /********  MEDIA QUERY - PESTAÑA MARCAS  ********/
+
+    .marca {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .marcaUno,.marcaDos {
+        width: 100%;
+        padding: 30px 20px;
+        clip-path: none;
+        text-align: center;
+    }
+
+    .marcaUno {
+        padding-right: 20px;
+    }
+
+    .marcaDos {
+        padding-left: 20px;
+    }
+
+    .img-marcaUno, .img-marcaDos {
+        margin: 0;
+        width: 100%;
+    }
+
+    .img-marcaUno img,
+    .img-marcaDos img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding: 5px;
+        border-radius: 8%;
+    }
+
+    .marca {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .marcaUno,
+    .marcaDos {
+        width: 100%;
+        padding: 50px;
+        clip-path: none;
+    }
+
+    .img-marcaUno,
+    .img-marcaDos {
+        margin: 0;
+        width: 100%;
+    }
+
+    .img-marcaUno img,
+    .img-marcaDos img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /********  MEDIA QUERY - CONTACTANOS  ********/
+
+    .contenedorContact {
+        flex-direction: column;
+        margin: 50px;
+        padding: 60px;
+        gap: 40px;
+        border-radius: 20px;
+    }
+
+    .formularioDos {
+        width: 100%;
+    }
+
+    .filaFormDos {
+        flex-direction: row;
+        gap: $gap_ocho;
+    }
+
+    .text-cont h1 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .text-cont p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+    /********  MEDIA QUERY - FOOTER  ********/
+
+    footer {
+        padding: 40px;
+    }
+
+    .pieDePagina div p {
+        width: 100%;
+    }
+}

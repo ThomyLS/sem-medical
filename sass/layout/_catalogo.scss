@@ -1,0 +1,42 @@
+@use '../utilities/variables' as*;
+
+/********  CATALOGO  ********/
+
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    gap: $gap_tres;
+    margin: 100px;
+}
+
+.catalogo h3 {
+    font-size: 25px;
+}
+
+.catalogo p {
+    font-size: 18px;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: $gap_siete;
+}
+
+.card-item img {
+    width: 100%;
+    border-radius: 8%;
+    box-shadow: $box-shadow-dos;
+}
+
+.card-titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}

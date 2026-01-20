@@ -1,0 +1,26 @@
+@use '../utilities/variables' as*;
+
+/********  INDEX - SECCION 2  ********/
+
+.seccionDos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.seccionDos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap_siete;
+}
+
+.seccionDos div p {
+    width: 90%;
+    font-size: 18px;
+}
+
+.seccionDos img {
+    width: 32rem;
+}

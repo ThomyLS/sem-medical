@@ -1,0 +1,53 @@
+/********  COLORES  ********/
+
+$color-primario: rgb(83, 182, 68);
+$color-secundario: red;
+$color-parrafos: rgb(23,23,23);
+$text-detalles: whitesmoke;
+
+/********  TAMAÑO DE FUENTE  ********/
+
+$tamaño-xs: 15px; 
+$tamaño-sm: 18px;
+$tamaño-md: 25px; 
+$tamaño-lg: 45px; 
+$tamaño-xl: 65px;
+$tamaño-xxl: 100px; 
+
+/********  MOBILE  ********/
+
+$tamaño-mobile-uno: 35px; 
+$tamaño-mobile-dos: 25px; 
+$tamaño-mobile-tres: 15px; 
+$tamaño-mobile-cuatro: 12px; 
+
+/********  TABLETS  ********/
+$tamaño-tablet-xs: 16px; 
+
+/********  GAPS  ********/
+
+$gap_uno: 100px;
+$gap_dos: 75px;
+$gap_tres: 50px;
+$gap_cuatro: 45px;
+$gap_cinco: 30px;
+$gap_seis: 28px;
+$gap_siete: 25px;
+$gap_ocho: 20px;
+$gap_nueve: 15px;
+$gap_diez: 12px;
+$gap_once: 10px;
+$gap_doce: 10%;
+
+/********  BORDER-RADIUS  ********/
+$border-radius-xs: 2%;
+$border-radius-sm: 5%;
+$border-radius-md: 8%;
+$border-radius-lg: 8px;
+$border-radius-xl: 15px;
+$border-radius-xxl: 20px;
+
+/********  BORDER-SHADOW  ********/
+
+$box-shadow-uno: 0px 10px 50px rgba(0, 0, 0, 0.45);
+$box-shadow-dos: 5px 5px 5px rgb(128, 128, 128, 0.20);

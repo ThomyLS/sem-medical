@@ -1,0 +1,64 @@
+@use '../utilities/variables' as*;
+
+.marca {
+    position: relative;
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+}
+
+.marcaUno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap_siete;
+    padding: 65px;
+    padding-right: 150px;
+    width: 1920px;
+    background-color: $color-primario;
+    color: $text-detalles;
+    z-index: 2;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+}
+
+.marcaUno h1 {
+    color: $text-detalles;
+    text-decoration: none;
+}
+
+.img-marcaUno {
+    margin-left: -140px;
+}
+
+.img-marcaUno img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.marcaDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap_siete;
+    padding: 65px;
+    padding-left: 150px;
+    width: 1920px;
+    background-color: $color-secundario;
+    color: $text-detalles;
+    z-index: 2;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.img-marcaDos {
+    margin-right: -150px;
+}
+
+.img-marcaDos img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.marcaDos h2 {
+    color: $text-detalles;
+    text-decoration: none;
+}

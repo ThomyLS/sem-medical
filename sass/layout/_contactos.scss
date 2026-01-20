@@ -1,0 +1,33 @@
+@use '../utilities/variables' as*;
+
+
+.formularioDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap_siete;
+    height: auto;
+}
+
+.contenedorContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color-primario;
+    margin: 100px;
+    padding: 100px;
+    border-radius: $border-radius-sm;;
+    gap: $gap_uno;
+    height: auto;
+}
+
+.filaFormDos {
+    display: flex;
+    flex-direction: row;
+    gap: $gap_siete;
+}
+
+.text-cont h1,
+p {
+    color: $text-detalles;
+}

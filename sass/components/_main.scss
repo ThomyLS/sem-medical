@@ -1,0 +1,10 @@
+@use '../utilities/variables' as*;
+
+
+main {
+    background-color: $text-detalles;
+    margin: 0px 100px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow-uno;
+}

@@ -1,0 +1,8 @@
+@use '../utilities/variables' as*;
+
+
+.buttonCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
