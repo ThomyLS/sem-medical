@@ -9,54 +9,71 @@
     justify-content: space-around;
     align-items: center;
     border-bottom: 10px solid $color-secundario;
-}
 
-.logo {
-    width: 12%;
-    margin: 10px;
-    margin-bottom: 15px;
-}
+    .logo {
+        width: 12%;
+        margin: 10px;
+        margin-bottom: 15px;
+    }
 
-.icon {
-    display: none;
-}
+    .pages {
+        font-size: 18px;
+        font-weight: 750;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: $gap_ocho;
 
-.pages {
-    font-size: 18px;
-    font-weight: 750;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    gap: $gap_ocho;
-}
+        li {
+            a {
+                position: relative;
+                padding-bottom: 10px;
+                color: $color-primario;
 
-.pages li a {
-    position: relative;
-    padding-bottom: 10px;
-    color: $color-primario;
-}
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 3px;
+                    background-color: $color-secundario;
+                    transition: width 0.3s ease;
+                }
 
-.pages li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background-color: $color-secundario;
-    transition: width 0.3s ease;
-}
+                &.active::after {
+                    width: 100%;
+                }
 
-.pages li a.active::after {
-    width: 100%;
-}
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
-.pages li a:hover::after {
-    width: 100%;
-}
+    .navbar {
+        div {
+            form {
+                button {
+                    display: inline-block;
+                    width: 25%;
+                    border: 1px solid $color-primario;
+                    background-color: rgb(83, 182, 68, 0.1);
+                    color: $color-primario;
+                    border-radius: 6px;
+                    padding: 8px;
+                    transition: all 0.3s ease;
+                    font-weight: bold;
 
-.btn {
-    color: $color-primario;
-    font-weight: 750;
+                    &:hover {
+                        background-color: $color-primario;
+                        color: $text-detalles;
+                        transform: scale(1.05)
+                    }
+                }
+            }
+        }
+    }
 }

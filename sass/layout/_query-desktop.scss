@@ -2,195 +2,50 @@
 
 @media (min-width: 992px) and (max-width: 1920px) {
 
-    /********  INDEX - BANNER  ********/
-
-    .conjunto h2 {
-        position: relative;
-        text-align: start;
-        bottom: 150px;
-        right: 150px;
-    }
-
-    .conjunto p {
-        position: relative;
-        text-align: start;
-        bottom: 150px;
-        right: 150px;
-    }
-
-    .titulo-banner {
-        top: 350px;
-        left: 450px;
-        font-size: 100px;
-        width: 100%;
-    }
-
-    /********  INDEX - SECCION 2  ********/
-
-    .seccionDos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: $gap_cinco;
-    }
-
-    h2 {
-        color: $color-primario;
-    }
-
-    .seccionDos div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .seccionDos img {
-        margin-top: 30px;
-        width: 25rem;
-    }
 
     /********  INDEX - CATALOGO  ********/
 
-    .catalogo h3 {
-        text-align: center;
-    }
-
-    .fila {
-        display: flex;
-        flex-wrap: wrap;
-        gap: $gap_ocho;
-        justify-content: center;
-    }
-
-    .card-item {
+    .catalogo {
         display: flex;
         flex-direction: column;
-        gap: $gap_siete;
-        width: 25%;
-    }
+        gap: $gap_cuatro;
+        padding: 50px 100px;
 
-    .card-item img {
-        width: 100%;
-    }
-
-    .card-titulo {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    /********  INDEX - SECCION 3  ********/
-
-    .seccionTres {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 25px;
-        padding: 25px;
-        border-radius: 2%;
-        text-align: center;
-    }
-
-    .seccionTres form {
-        padding: 45px;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: $gap_siete;
-    }
-
-    .row h5 {
-        width: 75%;
-    }
-
-    .iconFila {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 25px 0px;
-        gap: $gap_dos;
-    }
-
-    .filaForm {
-        display: flex;
-        flex-direction: column;
-        gap: $gap_siete;
-    }
-
-    /********  MEDIA QUERY - PESTAÑA CATALOGO  ********/
-
-    .filaDos {
-        display: flex;
-        flex-direction: row;
-        gap: $gap_once;
-    }
-
-    .dos {
-        width: 65%;
-
-        h4 {
-            font-size: 15px;
+        h3 {
+            text-align: center;
         }
 
         div {
-            button {
-                width: 75%;
-                padding: 1px;
+            display: flex;
+            flex-direction: row;
+            gap: $gap_ocho;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: $gap_siete;
+                width: 25%;
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                }
+
+                h4 {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 16px;
+                }
             }
         }
+
+        .dos {
+            height: 175px;
+            width: 135px;
+        }
     }
-
-    /********  MEDIA QUERY - PESTAÑA MARCAS  ********/
-
-    .marca {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .marcaUno,.marcaDos {
-        width: 100%;
-        padding: 30px 20px;
-        clip-path: none;
-        text-align: center;
-    }
-
-    .marcaUno {
-        padding-right: 20px;
-    }
-
-    .marcaDos {
-        padding-left: 20px;
-    }
-
-    .img-marcaUno, .img-marcaDos {
-        margin: 0;
-        width: 100%;
-    }
-
-    .img-marcaUno img,
-    .img-marcaDos img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        padding: 50px;
-        border-radius: 8%;
-    }
-
-    /********  MEDIA QUERY - FOOTER  ********/
-
-    footer {
-        padding: 40px;
-    }
-
-    .pieDePagina div p {
-        width: 100%;
-    }
-
 }

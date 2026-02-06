@@ -1,11 +1,14 @@
 @use 'base/genereales';
 @use 'base/reset';
+
 @use 'components/banners';
-@use 'components/button-catalogo';
 @use 'components/main';
-@use 'layout/contactos';
-@use 'layout/footer';
+
 @use 'layout/header';
+@use 'layout/footer';
+
+@use 'layout/catalogo';
+@use 'layout/contactos';
 @use 'layout/index-seccion-uno';
 @use 'layout/index-seccion-dos';
 @use 'layout/index-seccion-tres';

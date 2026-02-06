@@ -18,7 +18,7 @@ hr {
 }
 
 i {
-    font-size: 100px;
+    font-size: 75px;
     color: $text-detalles
 }
 
@@ -45,7 +45,14 @@ h2 {
     text-underline-offset: 10px;
 }
 
-.parrafos {
-    color: $color-parrafos;
+input,
+textarea {
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid $color-primario;
 }
 
+.parrafos {
+    font-size: $tamaño-sm;
+    color: $color-parrafos;
+}

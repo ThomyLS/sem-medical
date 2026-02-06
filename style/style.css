@@ -6,7 +6,6 @@
 /********  GAPS  ********/
 /********  BORDER-RADIUS  ********/
 /********  BORDER-SHADOW  ********/
-
 body {
   width: 100%;
 }
@@ -25,7 +24,7 @@ hr {
 }
 
 i {
-  font-size: 100px;
+  font-size: 75px;
   color: whitesmoke;
 }
 
@@ -52,7 +51,15 @@ h2 {
   text-underline-offset: 10px;
 }
 
+input,
+textarea {
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid rgb(83, 182, 68);
+}
+
 .parrafos {
+  font-size: 18px;
   color: rgb(23, 23, 23);
 }
 
@@ -67,37 +74,27 @@ h2 {
   width: 100%;
 }
 
-.conjunto h2 {
-  text-decoration: none;
-  position: relative;
+.carousel-caption {
   text-align: start;
-  bottom: 300px;
-  right: 150px;
+  bottom: 250px;
+  left: 150px;
+}
+.carousel-caption h2 {
+  text-decoration: none;
   color: whitesmoke;
   font-size: 45px;
 }
-
-.conjunto p {
-  position: relative;
-  text-align: start;
-  bottom: 300px;
-  right: 150px;
+.carousel-caption p {
   color: whitesmoke;
   font-size: 18px;
 }
 
 .titulo-banner {
-  top: 450px;
-  left: 600px;
+  top: 390px;
+  left: 550px;
   color: whitesmoke;
   font-size: 100px;
   text-decoration: none;
-}
-
-.buttonCont {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 main {
@@ -106,66 +103,6 @@ main {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.45);
-}
-
-.formularioDos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 25px;
-  height: auto;
-}
-
-.contenedorContact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgb(83, 182, 68);
-  margin: 100px;
-  padding: 100px;
-  border-radius: 5%;
-  gap: 100px;
-  height: auto;
-}
-
-.filaFormDos {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-}
-
-.text-cont h1,
-p {
-  color: whitesmoke;
-}
-
-footer {
-  background-color: rgb(23, 23, 23);
-  color: whitesmoke;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-}
-
-.pieDePagina {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 10%;
-}
-
-.pieDePagina div {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-.pieDePagina div p {
-  width: 600px;
-}
-
-.pieDePagina div a {
-  color: whitesmoke;
 }
 
 .encabezado {
@@ -177,18 +114,12 @@ footer {
   align-items: center;
   border-bottom: 10px solid red;
 }
-
-.logo {
+.encabezado .logo {
   width: 12%;
   margin: 10px;
   margin-bottom: 15px;
 }
-
-.icon {
-  display: none;
-}
-
-.pages {
+.encabezado .pages {
   font-size: 18px;
   font-weight: 750;
   list-style: none;
@@ -197,14 +128,12 @@ footer {
   width: auto;
   gap: 20px;
 }
-
-.pages li a {
+.encabezado .pages li a {
   position: relative;
   padding-bottom: 10px;
   color: rgb(83, 182, 68);
 }
-
-.pages li a::after {
+.encabezado .pages li a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -214,18 +143,138 @@ footer {
   background-color: red;
   transition: width 0.3s ease;
 }
-
-.pages li a.active::after {
+.encabezado .pages li a.active::after {
   width: 100%;
 }
-
-.pages li a:hover::after {
+.encabezado .pages li a:hover::after {
   width: 100%;
 }
-
-.btn {
+.encabezado .navbar div form button {
+  display: inline-block;
+  width: 25%;
+  border: 1px solid rgb(83, 182, 68);
+  background-color: rgba(83, 182, 68, 0.1);
   color: rgb(83, 182, 68);
-  font-weight: 750;
+  border-radius: 6px;
+  padding: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.encabezado .navbar div form button:hover {
+  background-color: rgb(83, 182, 68);
+  color: whitesmoke;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: rgb(23, 23, 23);
+  color: whitesmoke;
+  padding: 40px;
+}
+footer .pieDePagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10%;
+}
+footer .pieDePagina .datos {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+footer .pieDePagina div {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+footer .pieDePagina div a {
+  color: whitesmoke;
+}
+
+/********  CATALOGO  ********/
+.containerCatalogo h2 {
+  margin: 25px;
+}
+.containerCatalogo .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 48px;
+}
+.containerCatalogo .container .card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.45);
+  border-radius: 8%;
+}
+.containerCatalogo .container .card-item img {
+  width: 100%;
+  border-radius: 8%;
+}
+.containerCatalogo .container .card-item .card-titulo {
+  font-size: 20px;
+}
+.containerCatalogo .container .card-item .buttonItem {
+  border: 1px solid rgb(83, 182, 68);
+  background-color: rgba(83, 182, 68, 0.1);
+  color: rgb(83, 182, 68);
+  border-radius: 6px;
+  width: 100%;
+  padding: 4px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.containerCatalogo .container .card-item .buttonItem:hover {
+  background-color: rgb(83, 182, 68);
+  color: whitesmoke;
+  transform: scale(1.05);
+}
+
+.contenedorContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(83, 182, 68);
+  margin: 10px;
+  padding: 110px;
+  gap: 100px;
+  height: auto;
+  border-radius: 15px;
+}
+.contenedorContact .formularioDos .buttonFormDos {
+  display: inline-block;
+  width: 25%;
+  border: 2px solid red;
+  background-color: whitesmoke;
+  color: red;
+  border-radius: 6px;
+  padding: 4px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.contenedorContact .formularioDos .buttonFormDos:hover {
+  background-color: red;
+  color: whitesmoke;
+  transform: scale(1.05);
+}
+.contenedorContact h1,
+.contenedorContact p,
+.contenedorContact h2 {
+  text-decoration: none;
+  text-align: start;
+  color: whitesmoke;
+}
+.contenedorContact h2 {
+  font-size: 45px;
+}
+.contenedorContact div iframe {
+  width: 600px;
+  height: 350px;
+  border-radius: 8px;
 }
 
 /********  INDEX - SECCION 1  ********/
@@ -236,23 +285,6 @@ footer {
   padding: 100px;
 }
 
-.seccionUno p {
-  text-align: center;
-  font-size: 18px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 65px;
-  color: rgb(83, 182, 68);
-  padding-bottom: 15px;
-  margin: 0px;
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 10px;
-}
-
 /********  INDEX - SECCION 2  ********/
 .seccionDos {
   display: flex;
@@ -260,20 +292,22 @@ h1 {
   justify-content: center;
   padding: 50px 100px;
 }
-
+.seccionDos h2 {
+  text-align: start;
+}
 .seccionDos div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 25px;
 }
-
 .seccionDos div p {
   width: 90%;
-  font-size: 18px;
 }
-
 .seccionDos img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 32rem;
 }
 
@@ -282,94 +316,88 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background-color: rgb(83, 182, 68);
-  margin: 100px;
-  padding: 100px;
-  border-radius: 5%;
-  gap: 100px;
-  height: auto;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 25px;
+  gap: 75px;
 }
-
-.seccionTres div h2,
-p {
+.seccionTres .cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.seccionTres .cont h2,
+.seccionTres .cont p {
   text-decoration: none;
   color: whitesmoke;
 }
-
-.seccionTres form {
-  background-color: whitesmoke;
-  padding: 75px;
-  border-radius: 8px;
-}
-
-.cont {
+.seccionTres .cont .iconos div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
   gap: 25px;
 }
-
-.iconFila {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  gap: 75px;
-}
-
-.iconFila h5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.seccionTres .cont .iconos div h5 {
   font-size: 18px;
   text-align: center;
   color: whitesmoke;
 }
-
-.formularioUno {
+.seccionTres .formularioUno {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 25px;
   height: auto;
+  background-color: whitesmoke;
+  padding: 75px 35px;
+  border-radius: 8px;
 }
-
-.formularioUno label,
-input,
-textarea {
-  font-size: 18px;
-  text-align: center;
-  border: 1px solid rgb(83, 182, 68);
-}
-
-.filaForm {
+.seccionTres .formularioUno .filaForm {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
-
-.columnaForm {
+.seccionTres .formularioUno .columnaForm {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-
-.columnaForm button,
-.buttonItem {
-  background-color: whitesmoke;
+.seccionTres .formularioUno .columnaForm button {
+  display: inline-block;
+  width: 25%;
   border: 1px solid rgb(83, 182, 68);
-  width: 50%;
+  background-color: rgba(83, 182, 68, 0.1);
+  color: rgb(83, 182, 68);
+  border-radius: 6px;
+  padding: 4px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.seccionTres .formularioUno .columnaForm button:hover {
+  background-color: rgb(83, 182, 68);
+  color: whitesmoke;
+  transform: scale(1.05);
+}
+.seccionTres {
+  /*.buttonItem {
+  background-color: $text-detalles;
+  border: 1px solid $color-primario;
+  background-color: rgba(83, 182, 68, 0.2);
+  padding: 8px;
+  border-radius: 8px;*/
 }
 
-.marca {
+main .marca {
   position: relative;
   display: flex;
   height: 500px;
   overflow: hidden;
+  background-color: rgba(83, 182, 68, 0.5);
 }
-
-.marcaUno {
+main .marca .marcaUno {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -382,22 +410,32 @@ textarea {
   z-index: 2;
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
 }
-
-.marcaUno h1 {
+main .marca .marcaUno h1 {
   color: whitesmoke;
   text-decoration: none;
 }
-
-.img-marcaUno {
+main .marca .img-marcaUno {
   margin-left: -140px;
 }
-
-.img-marcaUno img {
+main .marca .img-marcaUno img {
   width: 100%;
   object-fit: cover;
 }
-
-.marcaDos {
+main .marca-dos {
+  position: relative;
+  display: flex;
+  height: 500px;
+  overflow: hidden;
+  background-color: rgba(182, 68, 68, 0.5);
+}
+main .marca-dos .img-marcaDos {
+  margin-right: -108px;
+}
+main .marca-dos .img-marcaDos img {
+  width: 100%;
+  object-fit: cover;
+}
+main .marca-dos .marcaDos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -410,17 +448,7 @@ textarea {
   z-index: 2;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
-
-.img-marcaDos {
-  margin-right: -150px;
-}
-
-.img-marcaDos img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.marcaDos h2 {
+main .marca-dos .marcaDos h2 {
   color: whitesmoke;
   text-decoration: none;
 }
@@ -431,191 +459,162 @@ textarea {
     margin: 0px;
   }
   /********  MEDIA QUERY - HEADER  ********/
-  .logo {
-    width: 35%;
+  .encabezado {
+    padding: 10px;
+    border-bottom: 8px solid red;
   }
-  .navbar {
+  .encabezado .logo {
+    width: 25%;
+  }
+  .encabezado .navbar {
     display: none;
   }
   /********  INDEX - BANNER  ********/
-  .carousel-caption, .titulo-banner {
+  .carousel-caption {
     display: none;
+  }
+  /********  INDEX - SECCION 1  ********/
+  .seccionUno {
+    gap: 25px;
+    padding: 50px;
+  }
+  .seccionUno p {
+    text-align: center;
   }
   /********  INDEX - SECCION 2  ********/
   .seccionDos {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 25px;
-  }
-  h2 {
-    color: rgb(83, 182, 68);
+    padding: 50px;
   }
   .seccionDos div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .seccionDos div p {
     text-align: center;
+    width: 100%;
   }
-  .seccionDos img {
-    width: 35rem;
+  .seccionDos div img {
+    width: 30rem;
   }
   /********  INDEX - CATALOGO  ********/
+  .catalogo {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 50px;
+  }
   .catalogo h3 {
     text-align: center;
   }
-  .fila {
+  .catalogo .fila {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
   }
-  .card-item {
+  .catalogo .fila .card-item {
     display: flex;
     flex-direction: column;
     gap: 25px;
     width: 25%;
   }
-  .card-item img {
-    width: 100%;
+  .catalogo .fila .card-item img {
+    border-radius: 8px;
   }
-  .card-titulo {
-    display: flex;
-    justify-content: center;
+  .catalogo .fila .card-item h4 {
     text-align: center;
   }
   /********  INDEX - SECCION 3  ********/
   .seccionTres {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 25px;
+    margin: 0px;
     padding: 25px;
-    border-radius: 2%;
+    border-radius: 0px;
     text-align: center;
   }
-  .seccionTres form {
-    padding: 45px;
+  .seccionTres .formularioUno {
+    padding: 75px;
   }
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+  /********  MEDIA QUERY - PESTAÑA NOSOTROS  ********/
+  .titulo-banner {
+    display: none;
   }
-  .row h5 {
-    width: 75%;
+  /********  MEDIA QUERY - PESTAÑA CATALOGO  ********/
+  .containerCatalogo .container {
+    padding: 2px;
+    margin-bottom: 100px;
   }
-  .iconFila {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0px;
-    gap: 75px;
-  }
-  .filaForm {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-  /********  MEDIA QUERY - CATALOGO  ********/
-  .filaDos {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .dos {
-    width: 65%;
-  }
-  .dos h4 {
-    font-size: 15px;
-  }
-  .dos div button {
-    width: 75%;
-    padding: 1px;
+  .containerCatalogo .container .card-item {
+    width: 25%;
+    gap: 12px;
   }
   /********  MEDIA QUERY - PESTAÑA MARCAS  ********/
-  .marca {
-    flex-direction: column;
-    height: auto;
+  main .marca {
+    height: 276px;
   }
-  .marcaUno, .marcaDos {
-    width: 100%;
-    padding: 30px 20px;
-    clip-path: none;
-    text-align: center;
-  }
-  .marcaUno {
-    padding-right: 20px;
-  }
-  .marcaDos {
-    padding-left: 20px;
-  }
-  .img-marcaUno, .img-marcaDos {
-    margin: 0;
-    width: 100%;
-  }
-  .img-marcaUno img,
-  .img-marcaDos img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    padding: 5px;
-    border-radius: 8%;
-  }
-  .marca {
-    flex-direction: column;
-    height: auto;
-  }
-  .marcaUno,
-  .marcaDos {
-    width: 100%;
+  main .marca .marcaUno {
     padding: 50px;
-    clip-path: none;
+    padding-right: 120px;
+    width: 1900px;
   }
-  .img-marcaUno,
-  .img-marcaDos {
-    margin: 0;
-    width: 100%;
+  main .marca .marcaUno h1 {
+    font-size: 35px;
+    padding: 0px;
   }
-  .img-marcaUno img,
-  .img-marcaDos img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  main .marca .marcaUno p {
+    font-size: 15px;
+  }
+  main .marca-dos {
+    height: 276px;
+  }
+  main .marca-dos .img-marcaDos img {
+    width: 276px;
+  }
+  main .marca-dos .marcaDos {
+    padding: 50px;
+    padding-left: 120px;
+    width: 1900px;
+  }
+  main .marca-dos .marcaDos h2 {
+    font-size: 30px;
+    padding: 0px;
+  }
+  main .marca-dos .marcaDos p {
+    font-size: 15px;
   }
   /********  MEDIA QUERY - CONTACTANOS  ********/
-  .contenedorContact {
-    flex-direction: column;
-    margin: 50px;
-    padding: 60px;
-    gap: 40px;
-    border-radius: 20px;
+  .mainContact .contenedorContact {
+    flex-direction: column-reverse;
+    padding: 50px;
   }
-  .formularioDos {
+  .mainContact .contenedorContact .formularioDos {
     width: 100%;
   }
-  .filaFormDos {
+  .mainContact .contenedorContact .formularioDos h1 {
+    justify-content: center;
+  }
+  .mainContact .contenedorContact .formularioDos p {
+    text-align: center;
+  }
+  .mainContact .contenedorContact .cont-column-2 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mainContact .contenedorContact .cont-column-2 h2 {
+    justify-content: center;
+  }
+  .mainContact .contenedorContact .cont-column-2 p {
+    text-align: center;
+  }
+  .mainContact .contenedorContact .cont-column-2 div {
+    display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: center;
   }
-  .text-cont h1 {
-    font-size: 1.9rem;
-    text-align: center;
-  }
-  .text-cont p {
-    font-size: 1rem;
-    text-align: center;
-  }
-  iframe {
-    width: 100%;
-    height: 400px;
+  .mainContact .contenedorContact .cont-column-2 div iframe {
+    border-radius: 8px;
   }
   /********  MEDIA QUERY - FOOTER  ********/
   footer {
@@ -628,26 +627,23 @@ textarea {
 @media (max-width: 575px) {
   /********  MEDIA QUERY - MAIN  ********/
   main {
-    display: flex;
-    flex-direction: column;
     margin: 0px;
   }
   /********  MEDIA QUERY - HEADER  ********/
   .encabezado {
     align-items: center;
     gap: 15px;
-    padding: 15px 0;
+    padding: 25px;
     border-bottom: 5px solid red;
   }
-  .logo {
+  .encabezado .logo {
     width: 40%;
     margin: 0;
   }
-  .pages {
+  .encabezado .pages {
     font-size: 12px;
-    flex-direction: row;
   }
-  .navbar {
+  .encabezado .navbar {
     display: none;
   }
   /********  INDEX - BANNER  ********/
@@ -656,203 +652,210 @@ textarea {
   }
   /********  INDEX - SECCION 1  ********/
   .seccionUno {
-    display: flex;
-    flex-direction: column;
     gap: 25px;
     padding: 25px;
+  }
+  .seccionUno h1 {
+    font-size: 35px;
   }
   .seccionUno p {
     text-align: center;
     font-size: 12px;
   }
-  h1 {
-    text-align: center;
-    font-size: 35px;
-    color: rgb(83, 182, 68);
-    padding-bottom: 15px;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 10px;
-  }
   /********  INDEX - SECCION 2  ********/
   .seccionDos {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 25px;
+    padding: 25px;
   }
-  h2 {
+  .seccionDos div {
+    align-items: center;
+  }
+  .seccionDos div h2 {
     font-size: 25px;
     color: rgb(83, 182, 68);
     padding-bottom: 15px;
   }
-  .seccionDos div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .seccionDos div p {
     text-align: center;
     font-size: 12px;
+    width: 100%;
   }
-  .seccionDos img {
+  .seccionDos div img {
     width: 20rem;
   }
   /********  INDEX - CATALOGO  ********/
   .catalogo {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin: 25px;
+    gap: 28px;
+    padding: 25px;
   }
-  .catalogo h3 {
+  .catalogo h2 {
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
   }
   .catalogo p {
     font-size: 12px;
   }
-  .fila {
+  .catalogo h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .catalogo .fila {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
-  .card-item {
+  .catalogo .fila .card-item {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: 25%;
+    width: 45%;
   }
-  .card-item img {
-    width: 100%;
+  .catalogo .fila .card-item img {
+    border-radius: 8px;
   }
-  .card-titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
+  .catalogo .fila .card-item h4 {
+    font-size: 15px;
     text-align: center;
   }
   /********  INDEX - SECCION 3  ********/
   .seccionTres {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: rgb(83, 182, 68);
     margin: 0px;
     padding: 25px;
-    border-radius: 2%;
-    gap: 100px;
-    height: auto;
+    border-radius: 0px;
     text-align: center;
   }
-  .seccionTres form {
-    padding: 45px;
+  .seccionTres .formularioUno {
+    padding: 75px 25px;
   }
-  .cont {
+  .seccionTres .formularioUno .filaForm {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 25px;
   }
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-  }
-  .row h5 {
-    width: 100%;
-  }
-  .iconFila {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0px;
-    gap: 75px;
-  }
-  .formularioUno {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    height: auto;
-  }
-  .formularioUno h5 {
-    width: 100%;
-  }
-  .filaForm {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  /********  MEDIA QUERY - PESTAÑA NOSOTROS  ********/
+  .titulo-banner {
+    display: none;
   }
   /********  MEDIA QUERY - PESTAÑA CATALOGO  ********/
-  .filaDos {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  .containerCatalogo h2 {
+    font-size: 25px;
+    margin: 15px;
   }
-  .dos {
-    width: 65%;
+  .containerCatalogo .container {
+    padding: 2px;
+    margin-bottom: 50px;
   }
-  .dos h4 {
+  .containerCatalogo .container .card-item {
+    padding: 12px;
+    width: 35%;
+    gap: 12px;
+  }
+  .containerCatalogo .container .card-item img {
+    width: 100%;
+  }
+  .containerCatalogo .container .card-item .card-titulo {
     font-size: 15px;
   }
-  .dos div button {
-    width: 75%;
-    padding: 1px;
+  .containerCatalogo .container .card-item .buttonItem {
+    font-size: 12px;
   }
   /********  MEDIA QUERY - PESTAÑA MARCAS  ********/
-  .marca {
-    flex-direction: column;
+  main .marca {
     height: auto;
+    flex-direction: column;
   }
-  .marcaUno, .marcaDos {
+  main .marca .marcaUno {
     width: 100%;
     padding: 30px 20px;
     clip-path: none;
     text-align: center;
   }
-  .marcaUno {
-    padding-right: 20px;
+  main .marca .marcaUno h1 {
+    font-size: 35px;
   }
-  .marcaDos {
-    padding-left: 20px;
+  main .marca .img-marcaUno {
+    margin-left: 0px;
+    padding: 15px;
   }
-  .img-marcaUno, .img-marcaDos {
-    margin: 0;
-    width: 100%;
+  main .marca .img-marcaUno img {
+    border-radius: 8px;
   }
-  .img-marcaUno img,
-  .img-marcaDos img {
-    width: 100%;
+  main .marca-dos {
     height: auto;
-    object-fit: cover;
-    padding: 5px;
-    border-radius: 8%;
+    flex-direction: column-reverse;
   }
-  /********  MEDIA QUERY - CONTACTANOS  ********/
-  .contenedorContact {
-    flex-direction: column;
-    margin: 10px;
-    padding: 30px;
-    gap: 30px;
-    border-radius: 15px;
-  }
-  .text-cont h1 {
-    font-size: 1.6rem;
-  }
-  .text-cont p {
-    font-size: 0.95rem;
+  main .marca-dos .marcaDos {
+    width: 100%;
+    padding: 30px 20px;
+    clip-path: none;
     text-align: center;
   }
-  iframe {
+  main .marca-dos .marcaDos h2 {
+    font-size: 25px;
+  }
+  main .marca-dos .img-marcaDos {
+    margin-right: 0px;
+    padding: 15px;
+  }
+  main .marca-dos .img-marcaDos img {
+    border-radius: 8px;
+  }
+  /********  MEDIA QUERY - CONTACTANOS  ********/
+  .mainContact .contenedorContact {
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 25px;
+  }
+  .mainContact .contenedorContact .formularioDos {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 300px;
+  }
+  .mainContact .contenedorContact .formularioDos h1 {
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+  }
+  .mainContact .contenedorContact .formularioDos p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .mainContact .contenedorContact .formularioDos div div input {
+    font-size: 12px;
+  }
+  .mainContact .contenedorContact .formularioDos div textarea {
+    font-size: 12px;
+  }
+  .mainContact .contenedorContact .formularioDos div .buttonFormDos {
+    font-size: 12px;
+  }
+  .mainContact .contenedorContact .cont-column-2 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mainContact .contenedorContact .cont-column-2 h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .mainContact .contenedorContact .cont-column-2 p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .mainContact .contenedorContact .cont-column-2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mainContact .contenedorContact .cont-column-2 div iframe {
+    width: auto;
+    border-radius: 8px;
   }
   /********  MEDIA QUERY - FOOTER  ********/
   footer {
@@ -876,157 +879,43 @@ textarea {
   }
 }
 @media (min-width: 992px) and (max-width: 1920px) {
-  /********  INDEX - BANNER  ********/
-  .conjunto h2 {
-    position: relative;
-    text-align: start;
-    bottom: 150px;
-    right: 150px;
-  }
-  .conjunto p {
-    position: relative;
-    text-align: start;
-    bottom: 150px;
-    right: 150px;
-  }
-  .titulo-banner {
-    top: 350px;
-    left: 450px;
-    font-size: 100px;
-    width: 100%;
-  }
-  /********  INDEX - SECCION 2  ********/
-  .seccionDos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  h2 {
-    color: rgb(83, 182, 68);
-  }
-  .seccionDos div {
+  /********  INDEX - CATALOGO  ********/
+  .catalogo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 45px;
+    padding: 50px 100px;
   }
-  .seccionDos img {
-    margin-top: 30px;
-    width: 25rem;
-  }
-  /********  INDEX - CATALOGO  ********/
   .catalogo h3 {
     text-align: center;
   }
-  .fila {
+  .catalogo div {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
   }
-  .card-item {
+  .catalogo div div {
     display: flex;
     flex-direction: column;
     gap: 25px;
     width: 25%;
   }
-  .card-item img {
+  .catalogo div div img {
     width: 100%;
+    border-radius: 8px;
   }
-  .card-titulo {
+  .catalogo div div h4 {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 16px;
   }
-  /********  INDEX - SECCION 3  ********/
-  .seccionTres {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 2%;
-    text-align: center;
-  }
-  .seccionTres form {
-    padding: 45px;
-  }
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-  }
-  .row h5 {
-    width: 75%;
-  }
-  .iconFila {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0px;
-    gap: 75px;
-  }
-  .filaForm {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-  /********  MEDIA QUERY - PESTAÑA CATALOGO  ********/
-  .filaDos {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .dos {
-    width: 65%;
-  }
-  .dos h4 {
-    font-size: 15px;
-  }
-  .dos div button {
-    width: 75%;
-    padding: 1px;
-  }
-  /********  MEDIA QUERY - PESTAÑA MARCAS  ********/
-  .marca {
-    flex-direction: column;
-    height: auto;
-  }
-  .marcaUno, .marcaDos {
-    width: 100%;
-    padding: 30px 20px;
-    clip-path: none;
-    text-align: center;
-  }
-  .marcaUno {
-    padding-right: 20px;
-  }
-  .marcaDos {
-    padding-left: 20px;
-  }
-  .img-marcaUno, .img-marcaDos {
-    margin: 0;
-    width: 100%;
-  }
-  .img-marcaUno img,
-  .img-marcaDos img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    padding: 50px;
-    border-radius: 8%;
-  }
-  /********  MEDIA QUERY - FOOTER  ********/
-  footer {
-    padding: 40px;
-  }
-  .pieDePagina div p {
-    width: 100%;
+  .catalogo .dos {
+    height: 175px;
+    width: 135px;
   }
 }
 

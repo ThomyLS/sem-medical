@@ -6,82 +6,97 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: $color-primario;
-    margin: 100px;
-    padding: 100px;
-    border-radius: $border-radius-sm;;
-    gap: $gap_uno;
-    height: auto;
-}
-
-.seccionTres div h2,
-p {
-    text-decoration: none;
-    color: $text-detalles;
-}
-
-.seccionTres form {
-    background-color: $text-detalles;
-    padding: 75px;
-    border-radius: 8px;
-}
-
-.cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: $gap_siete;
-}
-
-.iconFila {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    background-color: $color-primario;
+    margin: 50px;
     padding: 50px;
+    border-radius: 25px;
     gap: $gap_dos;
-}
+;
 
-.iconFila h5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 18px;
-    text-align: center;
-    color: $text-detalles;
-}
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: $gap_siete;
 
-.formularioUno {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: $gap_siete;
-    height: auto;
-}
+        h2,
+        p {
+            text-decoration: none;
+            color: $text-detalles;
+        }
 
-.formularioUno label,
-input,
-textarea {
-    font-size: 18px;
-    text-align: center;
-    border: 1px solid $color-primario;
-}
+        .iconos {
 
-.filaForm {
-    display: flex;
-    flex-direction: row;
-    gap: $gap_siete;
-}
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
+                gap: 25px;
 
-.columnaForm {
-    display: flex;
-    flex-direction: column;
-    gap: $gap_siete;
-}
+                h5 {
+                    font-size: 18px;
+                    text-align: center;
+                    color: $text-detalles;
+                }
+            }
+        }
+    }
 
-.columnaForm button,
-.buttonItem {
+    .formularioUno {
+        display: flex;
+        flex-direction: column;
+        gap: $gap_siete;
+        height: auto;
+        background-color: $text-detalles;
+        padding: 75px 35px;
+        border-radius: 8px;
+
+        .filaForm {
+            display: flex;
+            flex-direction: row;
+            gap: $gap_siete;
+
+        }
+
+        .columnaForm {
+            display: flex;
+            flex-direction: column;
+            gap: $gap_siete;
+
+            button {
+                display: inline-block;
+                width: 25%;
+                border: 1px solid $color-primario;
+                background-color: rgb(83, 182, 68, 0.1);
+                color: $color-primario;
+                border-radius: 6px;
+                padding: 4px;
+                transition: all 0.3s ease;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $color-primario;
+                    color: $text-detalles;
+                    transform: scale(1.05)
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+    /*.buttonItem {
     background-color: $text-detalles;
     border: 1px solid $color-primario;
-    width: 50%;
+    background-color: rgba(83, 182, 68, 0.2);
+    padding: 8px;
+    border-radius: 8px;*/
 }

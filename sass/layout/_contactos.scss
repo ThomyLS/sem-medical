@@ -1,33 +1,54 @@
 @use '../utilities/variables' as*;
 
-
-.formularioDos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: $gap_siete;
-    height: auto;
-}
-
 .contenedorContact {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: $color-primario;
-    margin: 100px;
-    padding: 100px;
-    border-radius: $border-radius-sm;;
+    margin: 10px;
+    padding: 110px;
     gap: $gap_uno;
     height: auto;
-}
+    border-radius: 15px;
 
-.filaFormDos {
-    display: flex;
-    flex-direction: row;
-    gap: $gap_siete;
-}
+    .formularioDos {
 
-.text-cont h1,
-p {
-    color: $text-detalles;
+        .buttonFormDos {
+            display: inline-block;
+            width: 25%;
+            border: 2px solid $color-secundario;
+            background-color: $text-detalles;
+            color: $color-secundario;
+            border-radius: 6px;
+            padding: 4px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+
+            &:hover {
+                background-color: $color-secundario;
+                color: $text-detalles;
+                transform: scale(1.05)
+            }
+        }
+    }
+
+    h1,
+    p,
+    h2 {
+        text-decoration: none;
+        text-align: start;
+        color: $text-detalles;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    div {
+        iframe {
+            width: 600px;
+            height: 350px;
+            border-radius: 8px;
+        }
+    }
 }

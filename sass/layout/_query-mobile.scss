@@ -6,8 +6,6 @@
     /********  MEDIA QUERY - MAIN  ********/
 
     main {
-        display: flex;
-        flex-direction: column;
         margin: 0px;
     }
 
@@ -16,22 +14,21 @@
     .encabezado {
         align-items: center;
         gap: $gap_nueve;
-        padding: 15px 0;
+        padding: 25px;
         border-bottom: 5px solid $color-secundario;
-    }
 
-    .logo {
-        width: 40%;
-        margin: 0;
-    }
+        .logo {
+            width: 40%;
+            margin: 0;
+        }
 
-    .pages {
-        font-size: 12px;
-        flex-direction: row;
-    }
+        .pages {
+            font-size: 12px;
+        }
 
-    .navbar {
-        display: none;
+        .navbar {
+            display: none;
+        }
     }
 
     /********  INDEX - BANNER  ********/
@@ -43,58 +40,47 @@
     /********  INDEX - SECCION 1  ********/
 
     .seccionUno {
-        display: flex;
-        flex-direction: column;
         gap: $gap_siete;
         padding: 25px;
-    }
 
-    .seccionUno p {
-        text-align: center;
-        font-size: 12px;
-    }
+        h1 {
+            font-size: 35px;
+        }
 
-    h1 {
-        text-align: center;
-        font-size: 35px;
-        color: $color-primario;
-        padding-bottom: 15px;
-        text-decoration: underline;
-        text-decoration-color: $color-secundario;
-        text-decoration-thickness: 4px;
-        text-underline-offset: 10px;
+        p {
+            text-align: center;
+            font-size: 12px;
+        }
     }
 
     /********  INDEX - SECCION 2  ********/
 
     .seccionDos {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: $gap_siete;
-    }
+        padding: 25px;
 
-    h2 {
-        font-size: 25px;
-        color: $color-primario;
-        padding-bottom: 15px;
-    }
+        div {
+            align-items: center;
 
-    .seccionDos div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+            h2 {
+                font-size: 25px;
+                color: $color-primario;
+                padding-bottom: 15px;
+            }
 
-    .seccionDos div p {
-        text-align: center;
-        font-size: 12px;
-    }
+            p {
+                text-align: center;
+                font-size: 12px;
+                width: 100%;
+            }
+        }
 
-    .seccionDos img {
-        width: 20rem;
+        div {
+            img {
+                width: 20rem;
+            }
+        }
     }
 
     /********  INDEX - CATALOGO  ********/
@@ -102,191 +88,234 @@
     .catalogo {
         display: flex;
         flex-direction: column;
-        gap: $gap_siete;
-        margin: 25px;
-    }
+        gap: $gap_seis;
+        padding: 25px;
 
-    .catalogo h3 {
-        text-align: center;
-        font-size: 15px;
-    }
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
 
-    .catalogo p {
-        font-size: 12px;
-    }
+        p {
+            font-size: 12px;
+        }
 
-    .fila {
-        display: flex;
-        flex-wrap: wrap;
-        gap: $gap_ocho;
-        justify-content: center;
-    }
+        h3 {
+            text-align: center;
+            font-size: 18px;
+        }
 
-    .card-item {
-        display: flex;
-        flex-direction: column;
-        gap: $gap_siete;
-        width: 25%;
-    }
+        .fila {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $gap_ocho;
+            justify-content: center;
 
-    .card-item img {
-        width: 100%;
-    }
+            .card-item {
+                display: flex;
+                flex-direction: column;
+                gap: $gap_siete;
+                width: 45%;
 
-    .card-titulo {
-        display: flex;
-        justify-content: center;
-        font-size: 12px;
-        text-align: center;
+                img {
+                    border-radius: 8px;
+                }
+
+                h4 {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
     }
 
     /********  INDEX - SECCION 3  ********/
 
     .seccionTres {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        background-color: $color-primario;
         margin: 0px;
         padding: 25px;
-        border-radius: 2%;
-        gap: $gap_uno;
-        height: auto;
+        border-radius: 0px;
         text-align: center;
+
+        .formularioUno {
+            padding: 75px 25px;
+
+            .filaForm {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 
-    .seccionTres form {
-    padding: 45px;
-    }
+    /********  MEDIA QUERY - PESTAÑA NOSOTROS  ********/
 
-    .cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: $gap_siete;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: $gap_siete;
-    }
-
-    .row h5 {
-        width: 100%;
-    }
-
-    .iconFila {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 25px 0px;
-        gap: $gap_dos;
-    }
-
-    .formularioUno {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: $gap_siete;
-        height: auto;
-    }
-
-    .formularioUno h5{
-        width: 100%;
-    }
-
-    .filaForm {
-        display: flex;
-        flex-direction: column;
-        gap: $gap_siete;
+    .titulo-banner {
+        display: none;
     }
 
     /********  MEDIA QUERY - PESTAÑA CATALOGO  ********/
 
-    .filaDos {
-        display: flex;
-        flex-direction: row;
-        gap: $gap_once;
-    }
-
-    .dos {
-        width: 65%;
-
-        h4 {
-            font-size: 15px;
+    .containerCatalogo {
+        h2 {
+            font-size: 25px;
+            margin: 15px;
         }
 
-        div {
-            button {
-                width: 75%;
-                padding: 1px;
+        .container {
+            padding: 2px;
+            margin-bottom: 50px;
+
+            .card-item {
+                padding: 12px;
+                width: 35%;
+                gap: 12px;
+
+                img {
+                    width: 100%;
+                }
+
+                .card-titulo {
+                    font-size: 15px;
+                }
+
+                .buttonItem {
+                    font-size: 12px;
+                }
             }
         }
     }
 
     /********  MEDIA QUERY - PESTAÑA MARCAS  ********/
 
-    .marca {
-        flex-direction: column;
-        height: auto;
-    }
+    main {
+        .marca {
+            height: auto;
+            flex-direction: column;
 
-    .marcaUno,.marcaDos {
-        width: 100%;
-        padding: 30px 20px;
-        clip-path: none;
-        text-align: center;
-    }
+            .marcaUno {
+                width: 100%;
+                padding: 30px 20px;
+                clip-path: none;
+                text-align: center;
 
-    .marcaUno {
-        padding-right: 20px;
-    }
+                h1 {
+                    font-size: 35px;
+                }
+            }
 
-    .marcaDos {
-        padding-left: 20px;
-    }
+            .img-marcaUno {
+                margin-left: 0px;
+                padding: 15px;
 
-    .img-marcaUno, .img-marcaDos {
-        margin: 0;
-        width: 100%;
-    }
+                img {
+                    border-radius: 8px;
+                }
+            }
+        }
 
-    .img-marcaUno img,
-    .img-marcaDos img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        padding: 5px;
-        border-radius: 8%;
+        .marca-dos {
+            height: auto;
+            flex-direction: column-reverse;
+
+            .marcaDos {
+                width: 100%;
+                padding: 30px 20px;
+                clip-path: none;
+                text-align: center;
+
+                h2 {
+                    font-size: 25px;
+                }
+            }
+
+            .img-marcaDos {
+                margin-right: 0px;
+                padding: 15px;
+
+                img {
+                    border-radius: 8px;
+                }
+            }
+        }
     }
 
     /********  MEDIA QUERY - CONTACTANOS  ********/
 
-    .contenedorContact {
-        flex-direction: column;
-        margin: 10px;
-        padding: 30px;
-        gap: $gap_cinco;
-        border-radius: 15px;
-    }
+    .mainContact {
 
-    .text-cont h1 {
-        font-size: 1.6rem;
-    }
+        .contenedorContact {
+            flex-direction: column-reverse;
+            gap: $gap_cinco;
+            margin: 0px;
+            border-radius: 0px;
+            padding: 25px;
 
-    .text-cont p {
-        font-size: 0.95rem;
-        text-align: center;
-    }
+            .formularioDos {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
 
-    iframe {
-        width: 100%;
-        height: 300px;
-    }
+                h1 {
+                    justify-content: center;
+                    font-size: 35px;
+                    text-align: center;
+                }
 
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                div {
+                    div {
+                        input {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                div {
+                    textarea {
+                        font-size: 12px;
+                    }
+                }
+
+                div {
+                    .buttonFormDos {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .cont-column-2 {
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                h2 {
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    
+                    iframe {
+                        width: auto;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
 
     /********  MEDIA QUERY - FOOTER  ********/
 

@@ -4,28 +4,28 @@
 footer {
     background-color: rgb(23, 23, 23);
     color: $text-detalles;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-}
+    padding: 40px;
 
-.pieDePagina {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: $gap_doce;
-}
+    .pieDePagina {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: $gap_doce;
 
-.pieDePagina div {
-    display: flex;
-    flex-direction: column;
-    gap: $gap_seis;
-}
+        .datos {
+            display: flex;
+            flex-direction: column;
+            gap: $gap_seis;
+        }
 
-.pieDePagina div p {
-    width: 600px;
-}
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: $gap_seis;
 
-.pieDePagina div a {
-    color: $text-detalles;
+            a {
+                color: $text-detalles;
+            }
+        }
+    }
 }

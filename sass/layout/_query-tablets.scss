@@ -11,238 +11,221 @@
 
     /********  MEDIA QUERY - HEADER  ********/
 
-    .logo {
-        width: 35%;
-    }
+    .encabezado {
+        padding: 10px;
+        border-bottom: 8px solid $color-secundario;
 
-    .navbar {
-        display: none;
+        .logo {
+            width: 25%;
+        }
+
+        .navbar {
+            display: none;
+        }
     }
 
     /********  INDEX - BANNER  ********/
 
-    .carousel-caption, .titulo-banner {
+    .carousel-caption {
         display: none;
+    }
+
+    /********  INDEX - SECCION 1  ********/
+
+    .seccionUno {
+        gap: $gap_siete;
+        padding: 50px;
+
+        p {
+            text-align: center;
+        }
     }
 
     /********  INDEX - SECCION 2  ********/
 
     .seccionDos {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: $gap_siete;
-    }
+        padding: 50px;
 
-    h2 {
-        color: $color-primario;
-    }
+        div {
+            align-items: center;
 
-    .seccionDos div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+            p {
+                text-align: center;
+                width: 100%;
+            }
+        }
 
-    .seccionDos div p {
-        text-align: center;
-    }
-
-    .seccionDos img {
-        width: 35rem;
+        div {
+            img {
+                width: 30rem;
+            }
+        }
     }
 
     /********  INDEX - CATALOGO  ********/
 
-    .catalogo h3 {
-        text-align: center;
-    }
-
-    .fila {
-        display: flex;
-        flex-wrap: wrap;
-        gap: $gap_ocho;
-        justify-content: center;
-    }
-
-    .card-item {
+    .catalogo {
         display: flex;
         flex-direction: column;
-        gap: $gap_siete;
-        width: 25%;
-    }
+        gap: $gap_seis;
+        padding: 50px;
 
-    .card-item img {
-        width: 100%;
-    }
+        h3 {
+            text-align: center;
+        }
 
-    .card-titulo {
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        .fila {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $gap_siete;
+            justify-content: center;
+
+            .card-item {
+                display: flex;
+                flex-direction: column;
+                gap: $gap_siete;
+                width: 25%;
+
+                img {
+                    border-radius: 8px;
+                }
+
+                h4 {
+                    text-align: center;
+                }
+            }
+        }
     }
 
     /********  INDEX - SECCION 3  ********/
 
     .seccionTres {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 25px;
+        margin: 0px;
         padding: 25px;
-        border-radius: 2%;
+        border-radius: 0px;
         text-align: center;
-    }
 
-    .seccionTres form {
-    padding: 45px;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: $gap_siete;
-    }
-
-    .row h5 {
-        width: 75%;
-    }
-
-    .iconFila {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 25px 0px;
-        gap: $gap_dos;
-    }
-
-    .filaForm {
-        display: flex;
-        flex-direction: column;
-        gap: $gap_siete;
-    }
-
-    /********  MEDIA QUERY - CATALOGO  ********/
-
-    .filaDos {
-        display: flex;
-        flex-direction: row;
-        gap: $gap_once;
-    }
-
-    .dos {
-        width: 65%;
-
-        h4 {
-            font-size: 15px;
+        .formularioUno {
+            padding: 75px;
         }
+    }
 
-        div {
-            button {
-                width: 75%;
-                padding: 1px;
+    /********  MEDIA QUERY - PESTAÑA NOSOTROS  ********/
+
+    .titulo-banner {
+        display: none;
+    }
+
+    /********  MEDIA QUERY - PESTAÑA CATALOGO  ********/
+
+    .containerCatalogo {
+
+        .container {
+            padding: 2px;
+            margin-bottom: 100px;
+
+            .card-item {
+                width: 25%;
+                gap: 12px;
             }
         }
     }
 
     /********  MEDIA QUERY - PESTAÑA MARCAS  ********/
 
-    .marca {
-        flex-direction: column;
-        height: auto;
-    }
+    main {
+        .marca {
+            height: 276px;
 
-    .marcaUno,.marcaDos {
-        width: 100%;
-        padding: 30px 20px;
-        clip-path: none;
-        text-align: center;
-    }
+            .marcaUno {
+                padding: 50px;
+                padding-right: 120px;
+                width: 1900px;
 
-    .marcaUno {
-        padding-right: 20px;
-    }
+                h1 {
+                    font-size: 35px;
+                    padding: 0px;
+                }
 
-    .marcaDos {
-        padding-left: 20px;
-    }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
 
-    .img-marcaUno, .img-marcaDos {
-        margin: 0;
-        width: 100%;
-    }
+        .marca-dos {
+            height: 276px;
 
-    .img-marcaUno img,
-    .img-marcaDos img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        padding: 5px;
-        border-radius: 8%;
-    }
+            .img-marcaDos {
+                img {
+                    width: 276px;
+                }
+            }
 
-    .marca {
-        flex-direction: column;
-        height: auto;
-    }
+            .marcaDos {
+                padding: 50px;
+                padding-left: 120px;
+                width: 1900px;
 
-    .marcaUno,
-    .marcaDos {
-        width: 100%;
-        padding: 50px;
-        clip-path: none;
-    }
+                h2 {
+                    font-size: 30px;
+                    padding: 0px;
+                }
 
-    .img-marcaUno,
-    .img-marcaDos {
-        margin: 0;
-        width: 100%;
-    }
-
-    .img-marcaUno img,
-    .img-marcaDos img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 
     /********  MEDIA QUERY - CONTACTANOS  ********/
 
-    .contenedorContact {
-        flex-direction: column;
-        margin: 50px;
-        padding: 60px;
-        gap: 40px;
-        border-radius: 20px;
-    }
+    .mainContact {
 
-    .formularioDos {
-        width: 100%;
-    }
+        .contenedorContact {
+            flex-direction: column-reverse;
+            padding: 50px;
 
-    .filaFormDos {
-        flex-direction: row;
-        gap: $gap_ocho;
-    }
+            .formularioDos {
+                width: 100%;
 
-    .text-cont h1 {
-        font-size: 1.9rem;
-        text-align: center;
-    }
+                h1 {
+                    justify-content: center;
+                }
 
-    .text-cont p {
-        font-size: 1rem;
-        text-align: center;
-    }
+                p {
+                    text-align: center;
+                }
+            }
 
-    iframe {
-        width: 100%;
-        height: 400px;
+            .cont-column-2 {
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                h2 {
+                    justify-content: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    iframe {
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
     }
 
     /********  MEDIA QUERY - FOOTER  ********/
